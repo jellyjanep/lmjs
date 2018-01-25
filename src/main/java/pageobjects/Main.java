@@ -17,7 +17,7 @@ public class Main {
 		signUp.selectDay("16");
 		signUp.selectYear("1994");
 		signUp.signUpwithEmailButton();
-		signUp.inputEmail("sdgdftgfghsdh@gmail.com");
+		signUp.inputEmail("aasdasdwcwfw@gmail.com");
 		signUp.inputFirstName("SuperMan");
 		signUp.inputLastName("Batman");
 		signUp.inputPassword("asdfghjkl");

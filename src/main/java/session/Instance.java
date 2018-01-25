@@ -15,6 +15,7 @@ public class Instance {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\tr_lnd_user\\Desktop\\chromedriver.exe");
 
 		driver = new ChromeDriver();
+		driver.get(url);
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
 	}

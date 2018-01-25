@@ -22,7 +22,7 @@ public class EditProfileTest {
 	@Test(priority = 1)
 	public void clickEditProfileTest() {
 		editProfile.clickEditPrrofileLink();
-		Instance.wait.until(ExpectedConditions.visibilityOf(editProfile.usernameField));
+		Instance.wait.until(ExpectedConditions.elementToBeClickable(editProfile.saveButton));
 		Assert.assertTrue(Instance.driver.findElement(By.xpath("//*[@id=\"username-picker-container\"]/div[1]/h2")).equals("Edit basic info"));
 	}
 
@@ -33,6 +33,7 @@ public class EditProfileTest {
 		editProfile.enterLocation(location);
 		editProfile.enterBio(bio);
 		editProfile.clickSaveButton();
+		Instance.wait.until(ExpectedConditions.elementToBeClickable(editProfile.editProfileButton));
 		Assert.assertTrue(Instance.driver.findElement(By.linkText("Subjects")).equals("Subjects"), "Registration Successful");
 	}
 }

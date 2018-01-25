@@ -1,5 +1,6 @@
 package pageobjects;
 
-public class Login {
+public class Search {
+
 
 }

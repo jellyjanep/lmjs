@@ -3,6 +3,7 @@ package pageobjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import session.Instance;
 
@@ -28,7 +29,7 @@ public class EditProfile extends Instance {
     }
 
     public void enterLocation(String location) {
-        locationField.sendKeys(location);
+        (new Select(locationField)).selectByVisibleText(location);
     }
 
     public void enterBio(String bio) {

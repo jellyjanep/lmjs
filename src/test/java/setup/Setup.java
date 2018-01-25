@@ -12,10 +12,10 @@ public class Setup {
 	public void setup(String browser, String url){
 		switch(browser) {
 		case "chrome":
-			Instance.createChrome(url);
+			Instance.openChrome(url);
 			break;
 		case "firefox":
-			Instance.createChrome(url);
+			Instance.openChrome(url);
 			break;
 		}
 	}

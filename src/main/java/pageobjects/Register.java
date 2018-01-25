@@ -41,7 +41,7 @@ public class Register extends Instance {
 	public void selectYear(String year){
 		(new Select(birthYear)).selectByVisibleText("1994");
 	}
-	public void signUpwithEmail(){
+	public void signUpwithEmailButton(){
 		signUpWithEmail.click();
 	}
 	public void inputEmail(String email){
@@ -56,7 +56,7 @@ public class Register extends Instance {
 	public void inputPassword(String password){
 		this.password.sendKeys(password);
 	}
-	public void submitButton(){
+	public void clickSubmitButton(){
 		submitButton.click();
 	}
 }

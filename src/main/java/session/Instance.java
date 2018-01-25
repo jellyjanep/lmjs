@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Instance {
 
 	public static WebDriver driver;
-	public static WebDriverWait wait;
+	public WebDriverWait wait;
 
 	public static void openChrome(String url){
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\tr_lnd_user\\Desktop\\chromedriver.exe");
